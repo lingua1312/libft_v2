@@ -6,7 +6,7 @@
 /*   By: nsichtig <nsichtig@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 15:41:56 by nsichtig          #+#    #+#             */
-/*   Updated: 2025/03/10 15:44:12 by nsichtig         ###   ########.fr       */
+/*   Updated: 2025/03/10 15:48:48 by nsichtig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isdigit(int c)
 {
-	if (c >= '48' && c <= '57')
+	if (c >= 48 && c <= 57)
 		return (c);
 	return (0);
 }

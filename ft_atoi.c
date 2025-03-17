@@ -6,30 +6,30 @@
 /*   By: nsichtig <nsichtig@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 12:00:35 by nsichtig          #+#    #+#             */
-/*   Updated: 2025/03/10 19:41:42 by nsichtig         ###   ########.fr       */
+/*   Updated: 2025/03/17 17:17:12 by nsichtig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	whitespace_check(char *ws, int nb)
+int	whitespace_check(const char *ws)
 {
-	if ((*ws == ' ' || *ws == '\t' || *ws == '\n'
-			|| *ws == '\v' || *ws == '\f' || *ws == '\r') && nb == 0)
+	if (ws && (*ws == ' ' || *ws == '\t' || *ws == '\n'
+			|| *ws == '\v' || *ws == '\f' || *ws == '\r'))
 	{
 		return (1);
 	}
 	return (0);
 }
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	neg;
 	int	num;
 
 	neg = 1;
 	num = 0;
-	while (whitespace_check(str, num))
+	while (whitespace_check(str))
 		str++;
 	while (*str == '+' || *str == '-')
 	{

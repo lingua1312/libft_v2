@@ -6,7 +6,7 @@
 /*   By: nsichtig <nsichtig@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 13:56:38 by nsichtig          #+#    #+#             */
-/*   Updated: 2025/03/13 14:30:27 by nsichtig         ###   ########.fr       */
+/*   Updated: 2025/03/17 00:42:57 by nsichtig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+# include <unistd.h>
 
 int		ft_strlen(char str);
 int		ft_atoi(char *str);
@@ -33,5 +34,6 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+void	*ft_calloc(size_t count, size_t size);
 
 #endif

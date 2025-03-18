@@ -6,7 +6,7 @@
 #    By: nsichtig <nsichtig@student.42heilbronn.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/10 13:59:47 by nsichtig          #+#    #+#              #
-#    Updated: 2025/03/17 00:42:39 by nsichtig         ###   ########.fr        #
+#    Updated: 2025/03/18 23:54:14 by nsichtig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,6 @@ CFLAGS = -Wall -Wextra -Werror
 
 SRC =	ft_isalnum.c\
 		ft_isdigit.c\
-		ft_memcmp.c\
 		ft_memset.c \
 		ft_strlcpy.c\
 		ft_strnstr.c\
@@ -36,7 +35,11 @@ SRC =	ft_isalnum.c\
 		ft_strlcat.c\
 		ft_strncmp.c\
 		ft_tolower.c\
-		ft_calloc.c
+		ft_calloc.c\
+		ft_strdup.c\
+		ft_substr.c\
+		ft_strjoin.c\
+
 
 OBJS =	$(SRC:%.c=%.o)
 

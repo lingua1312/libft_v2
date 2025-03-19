@@ -6,7 +6,7 @@
 /*   By: nsichtig <nsichtig@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 00:45:01 by nsichtig          #+#    #+#             */
-/*   Updated: 2025/03/19 02:12:55 by nsichtig         ###   ########.fr       */
+/*   Updated: 2025/03/19 02:21:08 by nsichtig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	src_len;
 	size_t	dst_len;
 
-	src_len	= ft_strlen(src);
-	dst_len	= ft_strlen(dst);
-
+	src_len = ft_strlen(src);
+	dst_len = ft_strlen(dst);
 	if (dst_len >= dstsize)
 		dst_len = dstsize;
 	if (dst_len == dstsize)

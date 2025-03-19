@@ -6,7 +6,7 @@
 /*   By: nsichtig <nsichtig@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 15:00:20 by nsichtig          #+#    #+#             */
-/*   Updated: 2025/03/19 02:23:03 by nsichtig         ###   ########.fr       */
+/*   Updated: 2025/03/19 23:30:04 by nsichtig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;
-	size_t	len;
+	size_t	s_len;
 	size_t	i;
 
 	if (!s)

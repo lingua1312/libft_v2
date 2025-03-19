@@ -6,7 +6,7 @@
 /*   By: nsichtig <nsichtig@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 11:02:27 by nsichtig          #+#    #+#             */
-/*   Updated: 2025/03/19 07:59:19 by nsichtig         ###   ########.fr       */
+/*   Updated: 2025/03/19 08:02:54 by nsichtig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	while (haystack[i] && i < len)
 	{
 		j = 0;
-		while (haystack[i + j] == needle[j] && (i +j) < len && needle[j])
+		while (haystack[i + j] == needle[j] && (i + j) < len && needle[j])
 			j++;
 		if (!needle[j])
 			return ((char *)&haystack[i]);

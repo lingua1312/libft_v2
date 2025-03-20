@@ -6,16 +6,16 @@
 /*   By: nsichtig <nsichtig@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 13:56:38 by nsichtig          #+#    #+#             */
-/*   Updated: 2025/03/19 08:32:43 by nsichtig         ###   ########.fr       */
+/*   Updated: 2025/03/20 01:59:06 by nsichtig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-
 # define LIBFT_H
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <string.h>
 
 size_t	ft_strlen(const char *str);
 int		ft_atoi(const char *str);
@@ -45,6 +45,8 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
-
+void	*ft_memchr(const void *s, int c, size_t n);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif

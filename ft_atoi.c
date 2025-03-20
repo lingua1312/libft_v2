@@ -6,7 +6,7 @@
 /*   By: nsichtig <nsichtig@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 12:00:35 by nsichtig          #+#    #+#             */
-/*   Updated: 2025/03/17 17:17:12 by nsichtig         ###   ########.fr       */
+/*   Updated: 2025/03/20 02:15:09 by nsichtig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_atoi(const char *str)
 	num = 0;
 	while (whitespace_check(str))
 		str++;
-	while (*str == '+' || *str == '-')
+	if (*str == '+' || *str == '-')
 	{
 		if (*str == '-')
 			neg *= -1;

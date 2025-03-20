@@ -6,7 +6,7 @@
 #    By: nsichtig <nsichtig@student.42heilbronn.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/10 13:59:47 by nsichtig          #+#    #+#              #
-#    Updated: 2025/03/20 02:47:39 by nsichtig         ###   ########.fr        #
+#    Updated: 2025/03/20 04:22:45 by nsichtig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,6 +46,7 @@ SRC =	ft_isalnum.c\
 		ft_putnbr_fd.c\
 		ft_putstr_fd.c\
 		ft_split.c\
+		ft_strtrim.c\
 
 OBJS =	$(SRC:%.c=%.o)
 

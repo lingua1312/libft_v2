@@ -6,7 +6,7 @@
 /*   By: nsichtig <nsichtig@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 13:56:38 by nsichtig          #+#    #+#             */
-/*   Updated: 2025/03/20 02:47:18 by nsichtig         ###   ########.fr       */
+/*   Updated: 2025/03/21 19:36:42 by nsichtig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,5 +49,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 char	**ft_split(char const *s, char c);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 #endif

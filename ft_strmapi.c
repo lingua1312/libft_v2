@@ -6,7 +6,7 @@
 /*   By: nsichtig <nsichtig@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 15:02:57 by nsichtig          #+#    #+#             */
-/*   Updated: 2025/03/21 19:32:46 by nsichtig         ###   ########.fr       */
+/*   Updated: 2025/03/21 20:29:28 by nsichtig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	if (!s || !f)
 		return (NULL);
-
 	result = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (!result)
 		return (NULL);
-
 	i = 0;
 	while (s[i])
 	{
@@ -31,18 +29,17 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		i++;
 	}
 	result[i] = '\0';
-
 	return (result);
 }
 // #include "libft.h"
 // #include <stdio.h>
 // #include <stdlib.h>
 
-// // Sample function to capitalize every alternate character
+//
 // char sample_function(unsigned int index, char c)
 // {
 // 	if (index % 2 == 0)
-// 		return (c - 32); // Convert lowercase to uppercase (if applicable)
+// 		return (c - 32);
 // 	return (c);
 // }
 

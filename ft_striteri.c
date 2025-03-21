@@ -6,7 +6,7 @@
 /*   By: nsichtig <nsichtig@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 15:03:30 by nsichtig          #+#    #+#             */
-/*   Updated: 2025/03/21 19:38:13 by nsichtig         ###   ########.fr       */
+/*   Updated: 2025/03/21 19:40:18 by nsichtig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 
 	if (!s || !f)
 		return ;
-
 	i = 0;
 	while (s[i])
 	{

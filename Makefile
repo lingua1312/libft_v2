@@ -6,7 +6,7 @@
 #    By: nsichtig <nsichtig@student.42heilbronn.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/10 13:59:47 by nsichtig          #+#    #+#              #
-#    Updated: 2025/03/21 19:36:46 by nsichtig         ###   ########.fr        #
+#    Updated: 2025/03/24 14:52:51 by nsichtig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,7 +50,19 @@ SRC =	ft_isalnum.c\
 		ft_strmapi.c\
 		ft_striteri.c
 
-OBJS =	$(SRC:%.c=%.o)
+SRC_BONUS = ft_lstnew_bonus.c\
+			ft_lstadd_front_bonus.c\
+			ft_lstsize_bonus.c\
+			ft_lstlast_bonus.c\
+			ft_lstadd_back_bonus.c\
+			ft_lstdelone.c\
+			ft_lstclear_bonus.c\
+			ft_lstiter_bonus.c\
+			ft_lstmap_bonus.c
+
+OBJS =			$(SRC:%.c=%.o)
+
+OBJS_BONUS =	$(SRC_BONUS:%.c=%.o)
 
 HEADER = libft.h
 
@@ -60,6 +72,9 @@ $(NAME):
 		$(CC)	$(CFLAGS) -c $(SRC)
 		ar rc $(NAME)	$(OBJS)
 		ranlib $(NAME)
+
+bonus: $(OBJS) $(OBJS_BONUS)
+		ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 
 clean:
 		 rm -rf $(OBJS)

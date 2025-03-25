@@ -25,3 +25,17 @@ void	*ft_memset(void *b, int c, size_t length)
 		*new_dest++ = src;
 	return (b);
 }
+// #include "libft.h"
+// #include <stdio.h>
+// #include <string.h>
+
+// int main()
+// {
+//     char str[20] = "Hello, 42 School!";
+//     printf("Before memset: %s\n", str);
+
+//     ft_memset(str + 7, 'x', 5);
+//     printf("After memset:  %s\n", str);
+
+//     return 0;
+// }
